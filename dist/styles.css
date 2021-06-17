@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "armyrust";
     src: url("../src/fonts/armyrust.ttf");
 }
@@ -6,7 +6,7 @@
 * {
     font-family: armyrust;
 }
-
+ */
 body {
     min-height: 100vh;
     display: flex;

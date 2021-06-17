@@ -14,9 +14,10 @@ const pageLoad = (() => {
     </div>
     </nav>
     `;
-    const main = document.createElement('div');
+    const main = document.createElement('main');
     main.setAttribute('id', 'content');
-  
+    main.classList.add('container-fluid')
+
     const footer = document.createElement('footer');
   
     footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0');
@@ -28,6 +29,49 @@ const pageLoad = (() => {
     contentContainer.append(header);
     contentContainer.append(main);
     contentContainer.append(footer);
+    
+    /* Create sidebar*/
+    const newdivSelector = document.querySelector('main');
+    const createDiv = document.createElement('div');
+    createDiv.setAttribute('id','sidebar')
+    createDiv.classList.add('row','content')
+    newdivSelector.append(createDiv);
+    const sidebarSelector = document.querySelector('#sidebar');
+    const createDiv2 = document.createElement('div');
+    createDiv2.classList.add('col-sm-3','sidenav')
+    sidebarSelector.append(createDiv2);
+    const createDiv3 = document.createElement('div');
+    createDiv3.classList.add('col-sm-9','task');
+    sidebarSelector.append(createDiv3);
+
+    /* Create content inside sideBar*/
+    const sidenavSelector = document.querySelector('.sidenav');
+    const createTitle = document.createElement('h4');
+    createTitle.innerText = 'Projects';
+    sidenavSelector.append(createTitle);
+
+    /* Create form */
+    const createForm = document.createElement('form')
+    sidenavSelector.append(createForm)
+    
+    const formSelector = document.querySelector('form')
+    const createInputProjectName = document.createElement('input')
+    createInputProjectName.setAttribute('type', 'text')
+    createInputProjectName.setAttribute('id', 'projectName')
+    createInputProjectName.setAttribute('placeholder', 'New Project Name')
+    createInputProjectName.setAttribute('size', '15');
+    formSelector.append(createInputProjectName)
+    const submitProjectButton = document.createElement('input')
+    submitProjectButton.setAttribute('type', 'submit')
+    submitProjectButton.setAttribute('value', 'Add')
+    formSelector.appendChild(submitProjectButton)
+
+    /* Create Todo list */
+    const taskSelector = document.querySelector('.task')
+    const createTitle2 = document.createElement('h4');
+    createTitle2.innerText = 'Tasks';
+    taskSelector.append(createTitle2);
+
   })();
   
   export default pageLoad;
