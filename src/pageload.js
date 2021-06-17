@@ -67,6 +67,12 @@ const pageLoad = (() => {
     submitProjectButton.setAttribute('id', 'add')
     formSelector.appendChild(submitProjectButton)
 
+    /* Create list of projects */
+    
+    const createUl = document.createElement('ul')
+    createUl.classList.add('nav','wi', 'nav-pills','flex-column')
+    sidenavSelector.append(createUl)
+    
     /* Create Todo list */
     const taskSelector = document.querySelector('.task')
     const createTitle2 = document.createElement('h4');
