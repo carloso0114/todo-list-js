@@ -62,7 +62,7 @@ const pageLoad = (() => {
     createInputProjectName.setAttribute('size', '15');
     formSelector.append(createInputProjectName)
     const submitProjectButton = document.createElement('input')
-    submitProjectButton.setAttribute('type', 'submit')
+    submitProjectButton.setAttribute('type', 'button')
     submitProjectButton.setAttribute('value', 'Add')
     formSelector.appendChild(submitProjectButton)
 
