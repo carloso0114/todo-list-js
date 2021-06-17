@@ -63,7 +63,8 @@ const pageLoad = (() => {
     formSelector.append(createInputProjectName)
     const submitProjectButton = document.createElement('input')
     submitProjectButton.setAttribute('type', 'button')
-    submitProjectButton.setAttribute('value', 'Add')
+    submitProjectButton.setAttribute('value', 'add')
+    submitProjectButton.setAttribute('id', 'add')
     formSelector.appendChild(submitProjectButton)
 
     /* Create Todo list */
