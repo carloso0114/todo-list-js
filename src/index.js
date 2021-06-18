@@ -1,2 +1,3 @@
 import pageLoad from './pageload';
-import newProject from './newproject';
+import Project from './newproject';
+import newTask from './newtask'
