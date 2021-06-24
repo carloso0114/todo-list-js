@@ -23,7 +23,9 @@ const pageLoad = (() => {
   footer.classList.add('py-4', 'bg-dark', 'flex-shrink-0');
   footer.innerHTML = `
   <div class="container text-center">
-    <a href='#' class='text-muted'>Footer</a>
+    <p class='text-muted'>For more content like this check on my Github profile: 
+      <a class='text-decoration-none' href='https://github.com/carloso0114'> Carlos Ospina</a>
+    </p>
   </div>`;
 
   contentContainer.append(header);
