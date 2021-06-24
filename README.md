@@ -23,7 +23,7 @@
 
 ## Watch the Live Version
 
-[Live Demo]()
+[Live Demo](https://rawcdn.githack.com/carloso0114/todo-list-js/7a9da8cfc4a4b87dc653716015f8da8c9817769d/dist/index.html)
 
 ### Prerequisites
 
