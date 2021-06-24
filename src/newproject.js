@@ -120,4 +120,4 @@ const projectDomLocal = (t) => {
 
 get_localstorage() 
 
-export {projectList, projectDomLocal};
+export {projectList, projectDomLocal, Project};
